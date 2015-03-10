@@ -1,0 +1,140 @@
+{
+  "Login":{
+    "when":["NUMBER"],
+    "where":["STRING"],
+    "why":["NUMBER", {
+      "0":"正常登入",
+      "1":"断线重连",
+      "2":"身份认证"
+    }],
+    "what":["STRING"],
+    "who":["STRING"],
+    "how":["STRING",{
+      "hand by":"手动登入",
+      "auto":"自动登入"
+    }],
+    "detail":["STRING"]
+  },
+
+  "Logout":{
+    "when":["NUMBER"],
+    "where":["STRING"],
+    "why":["NUMBER", {
+      "0":"正常登出",
+      "1":"超时",
+      "2":"检测到可疑身份"
+    }],
+    "what":["STRING"],
+    "who":["STRING"],
+    "how":["STRING",{
+      "hand by":"手动登出",
+      "auto":"自动登出"
+    }],
+    "detail":["STRING"]
+  },
+
+  "Chat":{
+    "when":["NUMBER"],
+    "where":["STRING"],
+    "type":["NUMBER", {
+      "0":"世界",
+      "1":"帮派",
+      "2":"个人"
+    }],
+    "message":["STRING"],
+    "to_who":["STRING"],
+    "from_who":["STRING"],
+    "detail":["STRING"]
+  },
+
+  "Trade":{
+    "when":["NUMBER"],
+    "where":["STRING"],
+    "type":["NUMBER", {
+      "0":"买",
+      "1":"卖"
+    }],
+    "item":["STRING"],
+    "currency":["NUMBER",{
+      "0":"金钱",
+      "1":"元宝",
+      "2":"通魂之灵",
+      "3":"碎片",
+      "4":"仙魔宝石",
+      "5":"修罗血",
+      "6":"龙纹璧"
+    }],
+    "amount":["NUMBER"],
+    "message":["STRING"],
+    "who":["STRING"],
+    "detail":["STRING"]
+  },
+
+  "Fight":{
+    "when":["NUMBER"],
+    "where":["STRING"],
+    "scenario":["NUMBER",{
+      "1":"对战",
+      "2":"闯关",
+      "3":"蟠桃盛宴",
+      "4":"篝火夜话",
+      "5":"仙魔悬赏",
+      "6":"英雄祈愿",
+      "7":"夺取经文",
+      "8":"英雄试炼",
+      "9":"英雄冢",
+      "10":"云游化缘",
+      "11":"修罗血战",
+      "12":"排行榜",
+      "13":"帮派神龙",
+      "14":"帮派战",
+      "15":"火线救援"
+    }],
+    "result":["NUMBER",{
+      "1":"成功",
+      "2":"失败-英雄阵亡",
+      "3":"失败-时间到",
+      "4":"失败-未能完成任务"
+    }],
+    "who":["STRING"],
+    "bonus":["STRING"],
+    "detail":["STRING"]
+  },
+
+  "Equip":{
+    "when":["NUMBER"],
+    "where":["STRING"],
+    "type":["NUMBER", {
+      "0":"装备",
+      "1":"卸下",
+      "2":"升级",
+      "3":"强化",
+      "4":"合成"
+    }],
+    "item":["STRING"],
+    "hero":["STRING"],
+    "material":["STRING"],
+    "who":["STRING"],
+    "result":["STRING"],
+    "detail":["STRING"]
+  },
+
+  "Upgrade":{
+    "when":["NUMBER"],
+    "where":["STRING"],
+    "type":["NUMBER", {
+      "0":"英雄升级",
+      "1":"角色升级",
+      "2":"英雄升星",
+      "3":"英雄飞仙",
+      "4":"英雄内丹"
+    }],
+    "hero":["STRING"],
+    "old_level":["NUMBER"],
+    "new_level":["NUMBER"],
+    "material":["STRING"],
+    "who":["STRING"],
+    "detail":["STRING"]
+
+  }
+}
